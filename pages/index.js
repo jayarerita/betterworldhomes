@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Image from 'next/image'
 import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
 import { getSortedPostsData } from '../lib/posts'
@@ -11,16 +12,28 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className={utilStyles.headingMd}>
-        <p>
-          Hello, I’m <strong>Shu</strong>. I’m a software engineer and a
-          translator (English/Japanese). You can contact me on{' '}
-          <a href="https://twitter.com/chibicode">Twitter</a>.
-        </p>
-        <p>
-          (This is a sample website - you’ll be building a site like this in{' '}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
-        </p>
+      <section id="welcome-section-id" className={utilStyles.welcomeSection}>
+        <div id="welcome-image-header-id">
+          <div>
+            Welcome
+          </div>
+          <div>
+            <Image>
+
+            </Image>
+          </div>
+        </div>
+        <div id="welcome-text-id">
+          <p>
+            We are Kathleen and Jake, the happy couple behind Better World Homes. We have always enjoyed working on our home designs and projects together and wanted to find a way to help others do the same while giving back to the community at the same time.
+          </p>
+          <p>
+            Whether you use an affiliate link or purchase our plans for your next DIY item, you can feel good knowing all the proceeds go towards a good cause.
+          </p>
+          <p>
+            There is plenty of free information an tools available too! Check out how you can make board and batten layout a breeze with our designer and learn how to conquer that custom project you have been dreaming about with a killer project plan.
+          </p>
+        </div>
       </section>
       <section id="nav-bar-id">
         <span>

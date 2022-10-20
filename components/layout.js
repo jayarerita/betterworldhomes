@@ -29,7 +29,15 @@ export default function Layout({ children, home }) {
       </Head>
       <header className={styles.header}>
         {home ? (
-          <>
+          <div className={styles.banner}>
+            <div className={styles.bannerBlock}>
+              <div className={`${styles.bannerText} ${styles.left}`}>
+                helping make your
+              </div>
+              <div className={`${styles.bannerText} ${styles.left}`}>
+                home and
+              </div>
+            </div>
             <Image
               priority
               src="/images/logo.png"
@@ -38,8 +46,15 @@ export default function Layout({ children, home }) {
               width={144}
               alt="logo"
             />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
-          </>
+            <div className={styles.bannerBlock}>
+              <div className={`${styles.bannerText} ${styles.right}`}>
+                the world a better
+              </div>
+              <div className={`${styles.bannerText} ${styles.right}`}>
+                place to live
+              </div>
+            </div>
+          </div>
         ) : (
           <>
             <Link href="/">
