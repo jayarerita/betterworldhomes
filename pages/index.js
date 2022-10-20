@@ -22,6 +22,13 @@ export default function Home({ allPostsData }) {
           <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
         </p>
       </section>
+      <section id="nav-bar-id">
+        <span>
+          <Link href={'/counter'}>
+            <a>Counter</a>
+          </Link>
+        </span>
+      </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Stories</h2>
         <ul className={utilStyles.list}>
