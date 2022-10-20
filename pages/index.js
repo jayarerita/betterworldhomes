@@ -5,6 +5,7 @@ import utilStyles from '../styles/utils.module.css'
 import { getSortedPostsData } from '../lib/posts'
 import Link from 'next/link'
 import Date from '../components/date'
+import styles from  "../styles/index.module.css"
 
 export default function Home({ allPostsData }) {
   return (
@@ -14,10 +15,10 @@ export default function Home({ allPostsData }) {
       </Head>
       <section id="welcome-section-id" className={utilStyles.welcomeSection}>
         <div id="welcome-image-header-id">
-          <div>
+          <div className={styles.welcomeBanner}>
             Welcome
           </div>
-          <div>
+          <div className={styles.usImage}>
             <Image>
 
             </Image>

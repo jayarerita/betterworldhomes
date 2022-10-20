@@ -30,6 +30,7 @@ export default function Layout({ children, home }) {
       <header className={styles.header}>
         {home ? (
           <div className={styles.banner}>
+            <div>
             <div className={styles.bannerBlock}>
               <div className={`${styles.bannerText} ${styles.left}`}>
                 helping make your
@@ -38,14 +39,17 @@ export default function Layout({ children, home }) {
                 home and
               </div>
             </div>
-            <Image
-              priority
-              src="/images/logo.png"
-              className={utilStyles.borderCircle}
-              height={144}
-              width={144}
-              alt="logo"
-            />
+            </div>
+            <div className={styles.centerLogo}>
+              <Image
+                priority
+                src="/images/logo.png"
+                className={utilStyles.borderCircle}
+                height={144}
+                width={144}
+                alt="logo"
+              />
+            </div>
             <div className={styles.bannerBlock}>
               <div className={`${styles.bannerText} ${styles.right}`}>
                 the world a better
