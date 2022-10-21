@@ -29,7 +29,7 @@ export default function Layout({ children, home }) {
       </Head>
       <header className={styles.header}>
         {home ? (
-          <div className={styles.banner}>
+          <section className={styles.banner}>
             <div>
             <div className={styles.bannerBlock}>
               <div className={`${styles.bannerText} ${styles.left}`}>
@@ -58,7 +58,7 @@ export default function Layout({ children, home }) {
                 place to live
               </div>
             </div>
-          </div>
+          </section>
         ) : (
           <>
             <Link href="/">
@@ -80,6 +80,28 @@ export default function Layout({ children, home }) {
             </h2>
           </>
         )}
+        <section>
+        <span>
+          <button className={styles.btnBlue}>
+            design tools
+          </button>
+        </span>
+        <span>
+          <button className={styles.btnBlue}>
+            stories
+          </button>
+        </span>
+        <span>
+          <button className="bg-blue-500 text-white font-bold py-2 px-4 rounded">
+            plans
+          </button>
+        </span>
+        <span>
+          <button className={styles.btnBlue}>
+            about
+          </button>
+        </span>
+        </section>
       </header>
       <main>{children}</main>
       {!home && (

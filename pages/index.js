@@ -19,9 +19,11 @@ export default function Home({ allPostsData }) {
             Welcome
           </div>
           <div className={styles.usImage}>
-            <Image>
-
-            </Image>
+            <Image
+              src="/images/logo.png"
+              height={144}
+              width={144}
+            />
           </div>
         </div>
         <div id="welcome-text-id">

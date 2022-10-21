@@ -60,7 +60,6 @@
 }
 
 .storySubtitle {
-  @apply bg-sky-500;
   text-transform: capitalize;
 }
 

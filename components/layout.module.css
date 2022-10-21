@@ -1,3 +1,5 @@
+
+
 .container {
   max-width: 50rem;
   padding: 0 1rem;
@@ -44,4 +46,8 @@
 
 .centerLogo {
   width: 8rem;
+}
+
+.btnBlue {
+  @apply bg-blue-500 text-white font-bold py-2 px-4 rounded;
 }
