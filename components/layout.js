@@ -80,26 +80,26 @@ export default function Layout({ children, home }) {
             </h2>
           </>
         )}
-        <section>
+        <section className={styles.navSection}>
         <span>
-          <button className={styles.btnBlue}>
+          <a href="/" className={styles.btnGreen}>
             design tools
-          </button>
+          </a>
         </span>
         <span>
-          <button className={styles.btnBlue}>
+          <a href="/" className={styles.btnGreen}>
             stories
-          </button>
+          </a>
         </span>
         <span>
-          <button className="bg-blue-500 text-white font-bold py-2 px-4 rounded">
+          <a href="/" className={styles.btnGreen}>
             plans
-          </button>
+          </a>
         </span>
         <span>
-          <button className={styles.btnBlue}>
+          <a className={styles.btnGreen} href="/">
             about
-          </button>
+          </a>
         </span>
         </section>
       </header>

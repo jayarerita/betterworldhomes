@@ -2,6 +2,11 @@
 @tailwindcss components;
 @tailwindcss utilities;
 
+:root {
+  --deep-green: #65752F;
+  --light-green: #E0F2BD;
+}
+
 html, body {
   padding: 0;
   margin: 0;
