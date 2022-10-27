@@ -8,19 +8,19 @@
 }
 
 html, body {
+  @apply font-body;
   padding: 0;
   margin: 0;
-  font-family: 'Poppins', sans-serif;
   line-height: 1.6;
   font-size: 18px;
 }
 
-* {
+*, *::before, *::after {
   box-sizing: border-box;
 }
 
 a {
-  color: #0070f3;
+  color: var(--deep-green);
   text-decoration: none;
 }
 

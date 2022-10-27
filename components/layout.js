@@ -81,26 +81,26 @@ export default function Layout({ children, home }) {
           </>
         )}
         <section className={styles.navSection}>
-        <span>
-          <a href="/" className={styles.btnGreen}>
-            design tools
-          </a>
-        </span>
-        <span>
-          <a href="/" className={styles.btnGreen}>
-            stories
-          </a>
-        </span>
-        <span>
-          <a href="/" className={styles.btnGreen}>
-            plans
-          </a>
-        </span>
-        <span>
-          <a className={styles.btnGreen} href="/">
-            about
-          </a>
-        </span>
+          <Link href="/">
+            <div className={styles.btnNav}>
+              design tools
+            </div>
+          </Link>
+          <Link href="/">
+            <div className={styles.btnNav}>
+              stories
+            </div>
+          </Link>
+          <Link href="/">
+            <div className={styles.btnNav}>
+              plans
+            </div>
+          </Link>
+          <Link href="/">
+            <div className={styles.btnNav}>
+              about
+            </div>
+          </Link>
         </section>
       </header>
       <main>{children}</main>
