@@ -30,7 +30,6 @@ export default function Layout({ children, home }) {
       <header className={styles.header}>
         {home ? (
           <section className={styles.banner}>
-            <div>
             <div className={styles.bannerBlock}>
               <div className={`${styles.bannerText} ${styles.left}`}>
                 helping make your
@@ -39,7 +38,7 @@ export default function Layout({ children, home }) {
                 home and
               </div>
             </div>
-            </div>
+
             <div className={styles.centerLogo}>
               <Image
                 priority
@@ -60,25 +59,36 @@ export default function Layout({ children, home }) {
             </div>
           </section>
         ) : (
-          <>
+          <section className={styles.banner}>
+            <div className={styles.bannerBlock}>
+              <div className={`${styles.bannerText} ${styles.left}`}>
+                helping make your
+              </div>
+              <div className={`${styles.bannerText} ${styles.left}`}>
+                home and
+              </div>
+            </div>
             <Link href="/">
-              <a>
+              <div className={styles.centerLogo}>
                 <Image
                   priority
                   src="/images/logo.png"
                   className={utilStyles.borderCircle}
-                  height={108}
-                  width={108}
+                  height={144}
+                  width={144}
                   alt="logo"
                 />
-              </a>
+              </div>
             </Link>
-            <h2 className={utilStyles.headingLg}>
-              <Link href="/">
-                <a className={utilStyles.colorInherit}>{name}</a>
-              </Link>
-            </h2>
-          </>
+            <div className={styles.bannerBlock}>
+              <div className={`${styles.bannerText} ${styles.right}`}>
+                the world a better
+              </div>
+              <div className={`${styles.bannerText} ${styles.right}`}>
+                place to live
+              </div>
+            </div>
+          </section>
         )}
         <section className={styles.navSection}>
           <Link href="/">
@@ -86,7 +96,7 @@ export default function Layout({ children, home }) {
               design tools
             </div>
           </Link>
-          <Link href="/">
+          <Link href="/posts/board-and-batten">
             <div className={styles.btnNav}>
               stories
             </div>

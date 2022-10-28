@@ -13,3 +13,7 @@
     height: 15rem;
     margin: 1rem;
 }
+
+.charitySection {
+    display: flex 2 1 auto;
+}
