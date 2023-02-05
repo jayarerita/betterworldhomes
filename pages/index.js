@@ -13,18 +13,19 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section id="charity-section-id">
-        <div>
+      <section id="charity-section-id" className={styles.charitySection}>
+        <div className={styles.charityText}>
           <p>
           All proceeds for 2023 are donated to Donate Life America, to help save and heal lives through organ and tissue transplantation
           </p>
         </div>
         <div>
-          <Link href="https://https://www.donatelife.net/">
+          <Link href="https://www.donatelife.net/">
             <Image 
             src="/images/donate_life_amer.png"
             height={144}
             width={144}
+            className={styles.charityLogo}
             />
           </Link>
         </div>
